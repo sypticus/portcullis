@@ -5,7 +5,7 @@ class SensorState {
     Date lastUpdated
     Sensor sensor
     String value
-    String timeStamp
+    long timeStamp
     static constraints = {
         value(nullable: true)
     }

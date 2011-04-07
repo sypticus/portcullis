@@ -1,3 +1,4 @@
+  <meta name="layout" content="main"/>
 <g:form action="addMote" controller="mote">
     Name:
     <g:textField name="name"/>

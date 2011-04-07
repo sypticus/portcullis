@@ -1,3 +1,4 @@
+  <meta name="layout" content="main"/>
 <%@ page import="com.portcullis.SensorType" %>
 <g:form action="addSensor" controller="mote" id="${mote.id}">
     Id:

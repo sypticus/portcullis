@@ -2,6 +2,7 @@ package portcullis
 
 import com.portcullis.Mote
 import com.portcullis.User
+import com.portcullis.Sensor
 
 class MoteController {
     def moteService
@@ -17,6 +18,7 @@ class MoteController {
     def updateMote = {
         def user = User.get(springSecurityService.principal.id)
         def mote = Mote.findByIdAndUser(params.id, user)
+
         moteService.updateMote(mote, params)
         flash.message = "Mote Updated!"
         redirect action: 'index', controller: 'mote'
@@ -34,6 +36,13 @@ class MoteController {
     }
     def newMote = {
 
+    }
+    def deleteMote={
+        def user = User.get(springSecurityService.principal.id)
+        def mote = Mote.findByIdAndUser(params.id, user)
+        moteService.deleteMote(mote)
+        flash.message = "Mote Deleted!"
+        redirect action: 'index', controller: 'mote'
     }
     def sensors = {
         def user = User.get(springSecurityService.principal.id)
@@ -53,5 +62,28 @@ class MoteController {
         moteService.createSensor(mote, params)
         flash.message = "Sensor Added!"
         redirect action: 'sensors', controller: 'mote', id: mote.id
+    }
+    def editSensor = {
+        def user = User.get(springSecurityService.principal.id)
+         def mote = Mote.findByIdAndUser(params.moteId, user)
+        def sensor = Sensor.findByIdAndMote(params.id, mote)
+        [sensor:sensor, mote:mote]
+    }
+
+    def updateSensor = {
+        def user = User.get(springSecurityService.principal.id)
+        def mote = Mote.findByIdAndUser(params.moteId, user)
+        def sensor = Sensor.findByIdAndMote(params.id, mote)
+        moteService.updateSensor(sensor, params)
+          redirect action: 'sensors', controller: 'mote', id: mote.id
+    }
+
+    def deleteSensor = {
+       def user = User.get(springSecurityService.principal.id)
+       def mote = Mote.findByIdAndUser(params.moteId, user)
+       def sensor = Sensor.findByIdAndMote(params.id, mote)
+       moteService.deleteSensor(sensor)
+        redirect action: 'sensors', controller: 'mote', id: mote.id
+
     }
 }

@@ -7,25 +7,27 @@
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" %>
+
 <html>
-  <head><title>Configure Motes</title></head>
+  <head><title>Configure Motes</title>
+  <meta name="layout" content="main"/></head>
   <body>
   <div><g:link action="newMote" controller="mote">Add</g:link> </div>
   <table>
       <tr>
           <td>
-              Id
+              <b>Id</b>
           </td>
           <td>
-              Name
+              <b>Name</b>
           </td>
-          <td>Settings</td>
+          <td><b>Settings</b></td>
       </tr>
       <g:each in="${motes}" var="mote">
          <tr>
           <td>${mote.mid}</td>
           <td>${mote.name}</td>
-          <td><g:link controller="mote" action="config" id="${mote.id}">config</g:link> | <g:link action="sensors" controller="mote" id="${mote.id}">sensors</g:link> </td>
+          <td><g:link controller="mote" action="config" id="${mote.id}">config</g:link> | <g:link action="sensors" controller="mote" id="${mote.id}">sensors</g:link> | <g:link action="deleteMote" id="${mote.id}" controller="mote">delete</g:link></td>
       </tr>
       </g:each>
 
