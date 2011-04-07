@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+    <changeSet id = "kyleHansen04062011RoleTable" author="kyleHansen">
+        <createTable tableName = "role">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+             <column name="version" type="bigint"/>
+            <column name="authority" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id = "kyleHansen04072011UserTable" author="kyleHansen">
+        <createTable tableName = "user">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="version" type="bigint"/>
+            <column name="account_expired" type="bit"/>
+            <column name="account_locked" type="bit"/>
+            <column name="date_created" type="DATETIME"/>
+            <column name="last_updated" type="DATETIME"/>
+            <column name="enabled" type="bit"/>
+            <column name="password_expired" type="bit"/>
+            <column name="password" type="varchar(255)"/>
+            <column name="username" type="varchar(255)"/>
+
+        </createTable>
+    </changeSet>
+
+    <changeSet id = "kyleHansen04062011UserRoleTable" author="kyleHansen">
+        <createTable tableName = "user_role">
+            <column name="user_id" type="bigint"/>
+            <column name="role_id" type="bigint"/>
+        </createTable>
+    </changeSet>
+
+     <changeSet id = "kyleHansen04072011MoteTable" author="kyleHansen">
+        <createTable tableName = "mote">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="version" type="bigint"/>
+            <column name="date_created" type="DATETIME"/>
+            <column name="last_updated" type="DATETIME"/>
+            <column name="mid" type="varchar(255)"/>
+            <column name="user_id" type="bigint"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id = "kyleHansen04072011SensorTable" author="kyleHansen">
+        <createTable tableName = "sensor">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="version" type="bigint"/>
+            <column name="date_created" type="DATETIME"/>
+            <column name="last_updated" type="DATETIME"/>
+            <column name="name" type="varchar(255)"/>
+            <column name="sid" type="varchar(255)"/>
+            <column name="type" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet id = "kyleHansen04072011SensorStateTable" author="kyleHansen">
+        <createTable tableName = "sensor_state">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="version" type="bigint"/>
+            <column name="date_created" type="DATETIME"/>
+            <column name="last_updated" type="DATETIME"/>
+            <column name="sensor_id" type="bigint"/>
+            <column name="value" type="varchar(255)"/>
+            <column name="time_stamp" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
