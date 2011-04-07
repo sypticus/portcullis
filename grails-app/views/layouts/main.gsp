@@ -11,7 +11,8 @@
         <div id="spinner" class="spinner" style="display:none;">
             <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
         </div>
-        <div id="grailsLogo"><a href="http://grails.org"><img src="${resource(dir:'images',file:'grails_logo.png')}" alt="Grails" border="0" /></a></div>
-        <g:layoutBody />
+        <div id="grailsLogo" style="display: inline-block; vertical-align:middle;"><a href="../home/index"><img src="${resource(dir:'images',file:'Portcullis.jpg')}" height="60" alt="Grails" border="0" /> <h2 style="display: inline-block;">Portcullis</h2></a></div>
+
+    <g:layoutBody />
     </body>
 </html>
