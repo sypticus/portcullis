@@ -60,31 +60,31 @@ class MessageServiceTests extends GrailsUnitTestCase {
         def user = new User(username:'test', password: 'test2').save(flush:true, failOnError:true)
         def service = new MessageService()
         def mote1 = new Mote(mid:'2', name:'test', user:user).save(flush:true, failOnError:true)
-        def mote2 = new Mote(mid:'3', name:'test2', user:user).save(flush:true, failOnError:true)
+    //    def mote2 = new Mote(mid:'3', name:'test2', user:user).save(flush:true, failOnError:true)
         def sensor1 = new Sensor(sid: 'a0', mote:mote1, name:'test1').save(flush:true, failOnError:true)
         def sensor2 = new Sensor(sid: 'a1', mote:mote1, name:'test1').save(flush:true, failOnError:true)
         def sensor3 = new Sensor(sid: 'a2', mote:mote1, name:'test1').save(flush:true, failOnError:true)
         def sensor4 = new Sensor(sid: 'a3', mote:mote1, name:'test1').save(flush:true, failOnError:true)
-        def sensor5 = new Sensor(sid: 'a0', mote:mote2, name:'test1').save(flush:true, failOnError:true)
+      /*  def sensor5 = new Sensor(sid: 'a0', mote:mote2, name:'test1').save(flush:true, failOnError:true)
         def sensor6 = new Sensor(sid: 'a1', mote:mote2, name:'test1').save(flush:true, failOnError:true)
         def sensor7 = new Sensor(sid: 'a2', mote:mote2, name:'test1').save(flush:true, failOnError:true)
         def sensor8 = new Sensor(sid: 'a3', mote:mote2, name:'test1').save(flush:true, failOnError:true)
+        */
 
 
 
+        mote1.addToSensors(sensor1)
+        mote1.addToSensors(sensor2)
+        mote1.addToSensors(sensor3)
+        mote1.addToSensors(sensor4)
 
-        mote1.sensors.add(sensor1)
-        mote1.sensors.add(sensor2)
-        mote1.sensors.add(sensor3)
-        mote1.sensors.add(sensor4)
-
-        mote2.sensors.add(sensor5)
-        mote2.sensors.add(sensor6)
-        mote2.sensors.add(sensor7)
-        mote2.sensors.add(sensor8)
-
-        user.motes.add(mote1)
-        user.motes.add(mote2)
+      /*  mote2.addToSensors(sensor5)
+        mote2.addToSensors(sensor6)
+        mote2.addToSensors(sensor7)
+        mote2.addToSensors(sensor8)
+        */
+        user.addToMotes(mote1)
+       // user.addToMotes(mote2)
 
         def results = service.receiveCall(fakeXml2())
         assert SensorState.findBySensor(sensor1).value == "98"
@@ -109,18 +109,18 @@ class MessageServiceTests extends GrailsUnitTestCase {
 
 
 
-        mote1.sensors.add(sensor1)
-        mote1.sensors.add(sensor2)
-        mote1.sensors.add(sensor3)
-        mote1.sensors.add(sensor4)
+        mote1.addToSensors(sensor1)
+        mote1.addToSensors(sensor2)
+        mote1.addToSensors(sensor3)
+        mote1.addToSensors(sensor4)
 
-        mote2.sensors.add(sensor5)
-        mote2.sensors.add(sensor6)
-        mote2.sensors.add(sensor7)
-        mote2.sensors.add(sensor8)
+        mote2.addToSensors(sensor5)
+        mote2.addToSensors(sensor6)
+        mote2.addToSensors(sensor7)
+        mote2.addToSensors(sensor8)
 
-        user.motes.add(mote1)
-        user.motes.add(mote2)
+        user.addToMotes(mote1)
+        user.addToMotes(mote2)
         println User.count()
         println user.id
         def data = XML.parse(fakeXml2())

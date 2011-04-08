@@ -35,7 +35,7 @@ class MessageService {
             def mote = user.motes.find{it.mid.toString() == m.@mid.toString()}
             m.sensor.each{s->
                 def sensor = mote?.sensors?.find{it.sid.toString() == s.@sid.toString()}
-                createSensorState(sensor, s, m.@timestamp.toString())
+                if(sensor) createSensorState(sensor, s, m.@timestamp.toString())
             }
         }
 

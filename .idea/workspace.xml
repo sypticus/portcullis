@@ -64,19 +64,8 @@
       <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/mote/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="107" selection-start="378" selection-end="378" vertical-scroll-proportion="-4.787234">
+            <state line="15" column="107" selection-start="378" selection-end="378" vertical-scroll-proportion="-0.9574468">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newMote.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/mote/newMote.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="14" selection-start="53" selection-end="53" vertical-scroll-proportion="-0.65217394">
-              <folding>
-                <element signature="tag#g:form#0;tag#gsp:root#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -84,7 +73,54 @@
       <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/home/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="-1.9565217">
+            <state line="9" column="89" selection-start="422" selection-end="422" vertical-scroll-proportion="-5.869565">
+              <folding>
+                <marker date="1302303519000" expanded="true" signature="786:805" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageService.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/portcullis/MessageService.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="49" selection-start="878" selection-end="878" vertical-scroll-proportion="0.39252338">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="58" selection-start="91" selection-end="91" vertical-scroll-proportion="-1.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="265" column="32" selection-start="4711" selection-end="4711" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogoutController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/LogoutController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MoteController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/portcullis/MoteController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="185" selection-end="190" vertical-scroll-proportion="-3.9130435">
               <folding />
             </state>
           </provider>
@@ -99,55 +135,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sensors.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/mote/sensors.gsp">
+      <file leaf-file-name="MoteService.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/portcullis/MoteService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="38" selection-start="38" selection-end="38" vertical-scroll-proportion="-0.0">
+            <state line="54" column="56" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/mote/config.gsp">
+      <file leaf-file-name="HomeController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/portcullis/HomeController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="45" selection-start="45" selection-end="45" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editSensor.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/mote/editSensor.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="36" selection-start="259" selection-end="259" vertical-scroll-proportion="-3.9130435">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="error.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/error.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="37" selection-start="305" selection-end="305" vertical-scroll-proportion="-3.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageService.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/services/portcullis/MessageService.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="79" selection-start="638" selection-end="638" vertical-scroll-proportion="0.288">
+            <state line="24" column="91" selection-start="769" selection-end="769" vertical-scroll-proportion="-8.782609">
               <folding />
             </state>
           </provider>
@@ -167,12 +167,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/views/mote/addSensor.gsp" />
-        <option value="$PROJECT_DIR$/src/groovy/com/portcullis/SensorType.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/com/portcullis/SensorState.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/portcullis/HomeController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/portcullis/MoteController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/portcullis/MoteService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/mote/test.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/mote/config.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/mote/editSensor.gsp" />
@@ -180,9 +176,13 @@
         <option value="$PROJECT_DIR$/grails-app/views/mote/newSensor.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/mote/sensors.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/mote/index.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/home/index.gsp" />
+        <option value="$PROJECT_DIR$/test/unit/portcullis/MessageServiceTests.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/portcullis/MessageService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/portcullis/HomeController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/portcullis/MoteService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
+        <option value="$PROJECT_DIR$/web-app/css/main.css" />
+        <option value="$PROJECT_DIR$/grails-app/views/home/index.gsp" />
       </list>
     </option>
   </component>
@@ -429,7 +429,13 @@
       </option>
       <envs />
       <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="48507" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -587,13 +593,13 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.042735044" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.042735044" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17094018" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2346079" sideWeight="0.95726496" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2346079" sideWeight="0.82905984" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -603,7 +609,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24935567" sideWeight="0.67234045" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847682" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32763532" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -647,58 +653,50 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/portcullis/HomeController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/mote/editSensor.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="19" selection-start="471" selection-end="471" vertical-scroll-proportion="-11.73913">
+        <state line="6" column="36" selection-start="259" selection-end="259" vertical-scroll-proportion="-3.9130435">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/portcullis/MoteController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/portcullis/SensorState.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="28" selection-start="2869" selection-end="2869" vertical-scroll-proportion="-23.565218">
+        <state line="9" column="11" selection-start="178" selection-end="178" vertical-scroll-proportion="-3.0681818">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/portcullis/MoteService.groovy">
+    <entry file="file://$USER_HOME$/grails/grails-1.3.7/src/java/org/codehaus/groovy/grails/plugins/web/taglib/FormTagLib.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="16" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
+        <state line="91" column="8" selection-start="2719" selection-end="2719" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
+    <entry file="file://$PROJECT_DIR$/test/unit/portcullis/MoteServiceTests.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="41.208332">
+        <state line="4" column="6" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/login/auth.gsp">
+    <entry file="file://$PROJECT_DIR$/test/unit/portcullis/MessageServiceTests.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="7.6595745">
+        <state line="90" column="9" selection-start="3402" selection-end="3402" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/mote/test.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/portcullis/Sensor.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/error.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/mote/config.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="45" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -710,53 +708,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/mote/sensors.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/portcullis/HomeController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="38" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
+        <state line="24" column="91" selection-start="769" selection-end="769" vertical-scroll-proportion="-8.782609">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/mote/newMote.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/services/portcullis/MoteService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="14" selection-start="53" selection-end="53" vertical-scroll-proportion="-0.65217394">
-          <folding>
-            <element signature="tag#g:form#0;tag#gsp:root#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/home/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="-1.9565217">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/mote/editSensor.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="36" selection-start="259" selection-end="259" vertical-scroll-proportion="-3.9130435">
+        <state line="54" column="56" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/mote/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="107" selection-start="378" selection-end="378" vertical-scroll-proportion="-4.787234">
+        <state line="15" column="107" selection-start="378" selection-end="378" vertical-scroll-proportion="-0.9574468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/portcullis/MoteController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="185" selection-end="190" vertical-scroll-proportion="-3.9130435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/LogoutController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="265" column="32" selection-start="4711" selection-end="4711" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="37" selection-start="305" selection-end="305" vertical-scroll-proportion="-3.75">
+        <state line="3" column="58" selection-start="91" selection-end="91" vertical-scroll-proportion="-1.875">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/home/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="89" selection-start="422" selection-end="422" vertical-scroll-proportion="-5.869565">
+          <folding>
+            <marker date="1302303519000" expanded="true" signature="786:805" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/portcullis/MessageService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="79" selection-start="638" selection-end="638" vertical-scroll-proportion="0.288">
+        <state line="35" column="49" selection-start="878" selection-end="878" vertical-scroll-proportion="0.39252338">
           <folding />
         </state>
       </provider>

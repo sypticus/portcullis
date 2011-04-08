@@ -8,11 +8,18 @@
         <g:javascript library="application" />
     </head>
     <body>
-        <div id="spinner" class="spinner" style="display:none;">
-            <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
-        </div>
-        <div id="grailsLogo" style="display: inline-block; vertical-align:middle;"><a href="../home/index"><img src="${resource(dir:'images',file:'Portcullis.jpg')}" height="60" alt="Grails" border="0" /> <h2 style="display: inline-block;">Portcullis</h2></a></div>
 
-    <g:layoutBody />
+        <div id="headerBar">
+            <div id="logo" style="display: inline-block; vertical-align:middle;"><g:link action="index" controller="home"><img src="${resource(dir:'images',file:'Portcullis.jpg')}" height="60" alt="Grails" border="0" /> <h2 style="display: inline-block;">Portcullis</h2></g:link></div>
+            <div style="float:right; margin:20px; font-size:15px;">
+                <g:link action="index" controller="home">Home</g:link>|
+                <g:link action="index" controller="mote">Motes</g:link>|
+                <g:link action="index" controller="logout">Logout</g:link>
+
+            </div>
+        </div>
+    <div class="mainBody">
+        <g:layoutBody />
+    </div>
     </body>
 </html>

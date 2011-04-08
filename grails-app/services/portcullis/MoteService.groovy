@@ -47,6 +47,15 @@ class MoteService {
         sensor.sensortype = SensorType.getFromString(params.sensorType)
         sensor.save(flush:true)
     }
+
+    def getSensorStates(mote, params){
+         def sensors = SensorState.withCriteria(){
+                'in'('sensor', mote.sensors)
+                 order('timeStamp' ,'desc')
+                 maxResults(params.max?params.max as int:50)
+            }.groupBy {it.sensor}
+         return sensors
+    }
      def deleteSensor(sensor){
         SensorState.findAllBySensor(sensor).each{it.delete()}
         sensor.delete(flush:true)
