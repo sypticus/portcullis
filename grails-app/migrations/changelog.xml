@@ -80,4 +80,17 @@
         </createTable>
     </changeSet>
 
+    <changeSet id = "kyleHansen04072011HomeSensorTable" author="kyleHansen">
+        <createTable tableName = "home_sensor">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="version" type="bigint"/>
+            <column name="date_created" type="DATETIME"/>
+            <column name="last_updated" type="DATETIME"/>
+            <column name="sensor_id" type="bigint"/>
+            <column name="user_id" type="varchar(255)"/>
+            <column name="order" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
 </databaseChangeLog>

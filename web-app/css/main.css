@@ -440,3 +440,20 @@ label.error{
 #newMoteDiv p{
     margin: 20px;
 }
+
+.graph{
+    padding-top:40px;
+}
+
+.sensorNameDiv{
+    width:500px;
+    color: #495A8C;
+    margin-top:20px;
+}
+.graphOptions{
+    width:500px;
+
+}
+.hardLink a{
+    color:#495A8C;
+}

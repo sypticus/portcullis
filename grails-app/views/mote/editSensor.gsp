@@ -1,9 +1,10 @@
 <%@ page import="com.portcullis.SensorType" %>
 <head>
     <meta name="layout" content="main"/>
-        <g:javascript library="pages/editSensor" />
+
     <title>Edit Sensor</title>
 </head>
+<g:javascript library="pages/editSensor" />
 <div class="breadCrumbs">
     <ul>
         <li><g:link action="index" controller="mote" >Motes</g:link></li>

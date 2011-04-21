@@ -89,7 +89,7 @@ class MoteController {
 
     def results={
         def user = User.get(springSecurityService.principal.id)
-        def mote = Mote.findByIdAndUser(params.moteId, user)
+        def mote = Mote.findByIdAndUser(params.id, user)
         [mote:mote]
     }
 

@@ -7,36 +7,40 @@ import com.portcullis.SensorState
 import com.portcullis.Sensor
 import grails.converters.JSON
 import com.portcullis.Mote
+import com.portcullis.HomeSensor
 
 class HomeController {
     def springSecurityService
     def moteService
     @Secured(['ROLE_USER'])
     def index = {
-        def sensors = null
-        def mote = null
+
         def user = User.get(springSecurityService.principal.id)
-         def motes = user.motes
-         if(params.moteId){
-            mote = Mote.get(params.moteId)
-            sensors = moteService.getSensorStates(mote, params)
-         }
-        println sensors
-         [user:user, motes:motes, sensors:sensors, mote:mote, max:params.max?params.max:50]
+        def sensors = HomeSensor.findAllByUser(user)*.sensor.sort{it.dateCreated}
+         [user:user, sensors:sensors]
     }
 
     def getStates={
         def sensor = Sensor.get(params.sensorId)
 
-        def series = SensorState.findAllBySensorAndTimeStampGreaterThan(sensor, params.timeStamp as long, [sort: "timeStamp",order: "asc"]).collect{[it.timeStamp, it.value as int]}
-        def data = [
-                    series:series,
-                name:sensor.name
-                ]
+        def data = moteService.getSensorStates(sensor, params)
 
-        println data as JSON
         render data as JSON
 
+    }
+    def removeFromHome={
+        def user = User.get(springSecurityService.principal.id)
+        def sensor = Sensor.get(params.id)
+        moteService.removeSensorFromHome(sensor, user)
+         redirect action: 'index', controller: 'home'
+    }
+
+    def addToHome={
+        def user = User.get(springSecurityService.principal.id)
+        def sensor = Sensor.get(params.id)
+        assert(sensor.mote.user == user)
+        moteService.addSensorToHome(sensor, user)
+       redirect action: 'results', controller: 'mote', id: sensor.mote.id
     }
 
 }
