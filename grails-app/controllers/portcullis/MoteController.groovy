@@ -9,7 +9,7 @@ class MoteController {
     def springSecurityService
     def index = {
         def user = User.get(springSecurityService.principal.id)
-          def motes = user.motes
+          def motes = user.motes?.sort{it.mid}
         println user
         println motes
           [user:user, motes:motes]
@@ -47,7 +47,7 @@ class MoteController {
     def sensors = {
         def user = User.get(springSecurityService.principal.id)
         def mote = Mote.findByIdAndUser(params.id, user)
-        def sensors = mote.sensors
+        def sensors = mote.sensors?.sort{it.sid}
         [mote:mote, sensors:sensors]
     }
 
@@ -86,4 +86,12 @@ class MoteController {
         redirect action: 'sensors', controller: 'mote', id: mote.id
 
     }
+
+    def results={
+        def user = User.get(springSecurityService.principal.id)
+        def mote = Mote.findByIdAndUser(params.moteId, user)
+        [mote:mote]
+    }
+
+
 }

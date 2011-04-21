@@ -24,7 +24,7 @@ class MoteService {
     def createSensor(mote, params){
         def sensor = new Sensor()
         sensor.sid = params.sid
-        sensor.name = params.sid
+        sensor.name = params.name
         sensor.sensortype = SensorType.getFromString(params.sensorType)
         sensor.mote = mote
         sensor.save(flush:true, failOnError:true)
@@ -43,7 +43,7 @@ class MoteService {
 
     def updateSensor(sensor, params){
          sensor.sid = params.sid
-        sensor.name = params.sid
+        sensor.name = params.name
         sensor.sensortype = SensorType.getFromString(params.sensorType)
         sensor.save(flush:true)
     }

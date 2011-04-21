@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title><g:layoutTitle default="Grails" /></title>
+
         <link rel="stylesheet" href="${resource(dir:'css',file:'main.css')}" />
         <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
+        <g:javascript library="jquery-1.5.2.min" />
+        <g:javascript library="jQueryPlugins/jquery.validate.min" />
+        <g:javascript library="jQueryPlugins/additional-methods" />
         <g:layoutHead />
-        <g:javascript library="application" />
     </head>
     <body>
 
         <div id="headerBar">
-            <div id="logo" style="display: inline-block; vertical-align:middle;"><g:link action="index" controller="home"><img src="${resource(dir:'images',file:'Portcullis.jpg')}" height="60" alt="Grails" border="0" /> <h2 style="display: inline-block;">Portcullis</h2></g:link></div>
-            <div style="float:right; margin:20px; font-size:15px;">
-                <g:link action="index" controller="home">Home</g:link>|
-                <g:link action="index" controller="mote">Motes</g:link>|
+          <div>Image goes here!!!</div>
+
+        </div>
+    <div id="navTop"></div>
+    <div id="navigation">
+        <ul id='ulNav'>
+            <li>
+                <g:link action="index" controller="home">Home</g:link>
+            </li>
+
+            <li>
+                 <g:link action="index" controller="mote">Motes</g:link>
+            </li>
+            <li>
                 <g:link action="index" controller="logout">Logout</g:link>
 
-            </div>
-        </div>
+            </li>
+        </ul>
+
+                    </div>
     <div class="mainBody">
         <g:layoutBody />
     </div>

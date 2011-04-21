@@ -27,8 +27,15 @@ class HomeController {
 
     def getStates={
         def sensor = Sensor.get(params.sensorId)
-        def states = SensorState.findAllBySensorAndTimeStampGreaterThan(sensor, params.timeStamp as long, [sort: "timeStamp",order: "asc"])
-        render states as JSON
+
+        def series = SensorState.findAllBySensorAndTimeStampGreaterThan(sensor, params.timeStamp as long, [sort: "timeStamp",order: "asc"]).collect{[it.timeStamp, it.value as int]}
+        def data = [
+                    series:series,
+                name:sensor.name
+                ]
+
+        println data as JSON
+        render data as JSON
 
     }
 

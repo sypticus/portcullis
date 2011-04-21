@@ -8,7 +8,7 @@ package com.portcullis
  * To change this template use File | Settings | File Templates.
  */
 public enum SensorType {
-    Tempurature("Tempurature"),
+    Temperature("Temperature"),
     Voltage("Voltage"),
     PH("PH"),
     Light("Light")
