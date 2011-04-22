@@ -93,4 +93,5 @@
             <column name="order" type="varchar(255)"/>
         </createTable>
     </changeSet>
+
 </databaseChangeLog>

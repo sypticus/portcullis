@@ -5,9 +5,9 @@ import org.codehaus.groovy.grails.orm.hibernate.cfg.GrailsAnnotationConfiguratio
     pooled = false
     driverClassName = "com.mysql.jdbc.Driver"  // uncomment for mysql
     //driverClassName = "com.hsql.jdbc.Driver"
-    username = "root"   //uncomment for mysql
+    username = "portcullis"   //uncomment for mysql
   //  username = "sa"
-    password = ""
+    password = "m0t3b0ss"
     dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
 }
 
@@ -33,8 +33,9 @@ environments {
     }
     production {
         dataSource {
-            dbCreate = "update"
-            url = "jdbc:hsqldb:file:prodDb;shutdown=true"
+             dbCreate = "update" // one of ‘create’, ‘create-drop’,'update’
+         //   url = "jdbc:hsqldb:mem:devDB" //jdbc:hsqldb:file:devDB;shutdown=true
+            url = "jdbc:mysql://127.0.0.1:3306/portcullis"   // uncomment  for mysql
         }
     }
 
