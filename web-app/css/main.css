@@ -452,7 +452,7 @@ label.error{
 }
 .graphOptions{
     width:500px;
-
+	height:100px;
 }
 .hardLink a{
     color:#495A8C;

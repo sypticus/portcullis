@@ -17,14 +17,16 @@
     <g:if test="${!mote.sensors}">
         You have not added any <g:link action="sensors" controller="mote" id="${mote.id}">sensors</g:link> to this mote.
     </g:if>
-<g:each var="sensor" in="${mote.sensors}">
-    <div class="sensorNameDiv">${sensor.id} - ${sensor.name}</div>
+<g:each var="sensor" in="${mote.sensors?.sort{it.sid}}">
+    <div class="sensorNameDiv">${sensor.id} - ${sensor.name}</div>   
     <g:hiddenField class="sensorHidden" name="sensor${sensor.id}" value="${sensor.id}"/>
     <div class="graph" id="placeholder_${sensor.id}" style="width:600px;height:300px;"></div>
     <div class="graphOptions">
         <g:link action="addToHome" id="${sensor.id}" controller="home">
             Add to Home
         </g:link>
+	    Max Results:
+	<g:select name="maxlength_${sensor.id}" value="50" from="[50]"/>
     </div>
 </g:each>
 </div>

@@ -51,11 +51,19 @@ class MoteService {
     }
 
     def getSensorStates(sensor, params){
-        def series = SensorState.findAllBySensorAndTimeStampGreaterThan(sensor, (params.timeStamp as long) * 1000, [sort: "timeStamp",order: "asc"]).collect{[it.timeStamp, it.value as int]}
+        def seriesRaw = SensorState.findAllBySensorAndTimeStampGreaterThan(sensor, params.timeStamp as long, [sort: "timeStamp",order: "desc", max:params.maxLength]);
+        if(!seriesRaw) return [
+                timestamp:params.timeStamp
+        ]
+        seriesRaw = seriesRaw.reverse()
+        def last = seriesRaw.last()
+        def series=seriesRaw.collect{[(it.timeStamp as int) *1000, it.value as int]}
+        println series
         def data = [
-                      series:series,
+                  series:series,
                   name:sensor.name,
-                  type: sensor.sensortype.toString()
+                  type: sensor.sensortype.toString(),
+                  timestamp: last.timeStamp
                   ]
 
         data

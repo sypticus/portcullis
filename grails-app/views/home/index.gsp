@@ -20,6 +20,8 @@
                 <g:link action="removeFromHome" id="${sensor.id}" controller="home">
                     Remove from Home
                 </g:link>
+                Max Results:
+				<g:select name="maxlength_${sensor.id}" value="50" from="[50]"/>
             </div>
         </g:each>
     </g:else>
