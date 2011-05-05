@@ -57,7 +57,7 @@ class MoteService {
         ]
         seriesRaw = seriesRaw.reverse()
         def last = seriesRaw.last()
-        def series=seriesRaw.collect{[(it.timeStamp as int) *1000, it.value as int]}
+        def series=seriesRaw.collect{[(it.timeStamp as int), it.value as int]}
         println series
         def data = [
                   series:series,
